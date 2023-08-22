@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- the entire body must be written by student -->
+    <form action="post"> 
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Name">
+        <br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Email">
+        <br>
+        
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gender_m" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" name="gender" id="gender_f" required>
+        <label for="gender_f">Female</label>
+        <br>
+        
+        <label for="cars">Car Brands</label>
+        <select id="cars" name="cars" required>
+            <option value="">--Please choose an option--</option>
+            <option value="BWM">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Benz">Benz</option>
+        </select>
+        <br>
+        
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required placeholder="Age">
+        <br>
+        
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" required>
+        <br>
 
+        <label for="tel">Phone Number</label>
+        <input type="tel" name="phone" id="tel" placeholder="xxx-xxx-xxxx">
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Password">
+        <br>
+
+        <label for="tos">I agree to the TOS</label>
+        <input type="checkbox" name="tos" id="tos" required>
+        <br>
+        
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
